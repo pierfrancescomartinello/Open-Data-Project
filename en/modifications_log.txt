@@ -1,0 +1,19 @@
+Encoding:
+  It has been necessary to use the Encoding ISO-8859-15/EURO during the operations of data cleaning in order to examine lowecase accented characters not recognised by UTF8
+Cleaning:
+  File:Regione-Puglia---Luoghi-di-interesse-turistico-culturale-naturalistico.csv
+    Deleted the colums:
+      "FAX", "Cellulare", "Servizi", "Attrezzature", "Foto 1", "Autore foto 1", "Foto 2", "Autore foto 2", "Foto 3", "Autore foto 3", "Codice ISTAT comune", "Email", "Telefono"
+    Modified the following values:
+      Replaced the character "-" in the column "Numero Civico" that standed for an absence of information and replaced with a blank string
+      Replaced the character "¿" in the column "Indirizzo" that were used to indicate the charachers "'" and "-"
+
+  File:Regione-Sardegna---Luoghi-di-interesse-turistico-culturale-naturalistico.csv
+
+      "IDFEATURE", "REGIONE", "TIPOLOGIA", "PROVINCIA"
+
+  File:Turismo - Elenco dei siti turistici visitabili.csv
+    Deleted the columns:
+      "orario ingresso", "note orario ingresso", "biglietto", "Indirizzo mail", "accessibilità", "note visite guidate"
+    Rimosso l'anno di costruzione/istituzione dalla colonna "Nome del sito", "indirizzo"
+    Removed the year of building or estabilishment of the Point of interest from the columms "Nome del sito", "indirizzo"

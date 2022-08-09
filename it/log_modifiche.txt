@@ -1,0 +1,18 @@
+Codifica:
+  resosi necessario l'utilizzo della codifica ISO-8859-15/EURO durante la pulizia per la lettura di caratteri accentati minuscoli non riconosciuti da UTF8
+
+Pulizia:
+  File:Regione-Puglia---Luoghi-di-interesse-turistico-culturale-naturalistico.csv
+    Rimosse le colonne:
+      "FAX", "Cellulare", "Servizi", "Attrezzature", "Foto 1", "Autore foto 1", "Foto 2", "Autore foto 2", "Foto 3", "Autore foto 3", "Codice ISTAT comune", "Email", "Telefono"
+      Rimosso il carattere "-" nella colonna "Numero Civico" che denotava assenza di informazione e sostituita con stringa vuota
+      Rimosso il carattere "¿" nella colonna "Indirizzo" che veniva utilizzato per contrassegnare i caratteri "'" e "-"
+
+  File:Regione-Sardegna---Luoghi-di-interesse-turistico-culturale-naturalistico.csv
+    Rimossa le colonne:
+      "IDFEATURE", "REGIONE", "TIPOLOGIA", "PROVINCIA"
+
+  File:Turismo - Elenco dei siti turistici visitabili.csv
+    Rimosse le colonne:
+        "orario ingresso", "note orario ingresso", "biglietto", "Indirizzo mail", "accessibilità", "note visite guidate"
+    Rimosso l'anno di costruzione/istituzione dalle colonne "Nome del sito", "indirizzo"

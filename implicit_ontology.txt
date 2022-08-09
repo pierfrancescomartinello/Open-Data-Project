@@ -1,0 +1,30 @@
+@prefix poifo: <http://poifinder/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+poifo:POI a <http://dbpedia.org/ontology/Place> ;
+  rdfs:label "Punto di interesse"@it ;
+  owl:same_as <http://dbpedia.org/ontology/Point_of_interest> ;
+
+poifo:Typology a rdf:property ;
+  rdfs:label "Tipologia"@it ;
+  owl:same_as <http://dbpedia.org/ontology/Type> ;
+  rdfs:domain poifo:POI ;
+  rdfs:range rdfs:literal ;
+
+poifo:Link_to a rdf:property ;
+  rdfs:label "Collegamento"@it ;
+  owl:same_as <http://dbpedia.org/ontology/Website> ;
+  rdfs:domain poifo:POI ;
+  rdfs:range rdfs:literal ;
+
+poifo:Address a rdf:property ;
+  rdfs:label "Indirizzo"@it ;
+  owl:same_as <http://dbpedia.org/ontology/address> ;
+  rdfs:domain poifo:POI ;
+  rdfs:range rdfs:literal ;
+
+poifo:Is_Located_In a rdf:property ;
+  rdfs:label "Locazione"@it ;
+  owl:same_as <http://dbpedia.org/ontology/City> ;
+  rdfs:domain poifo:POI ;
+  rdfs:range rdfs:literal ;
